@@ -1,0 +1,81 @@
+/* =======================================
+   temples-large.css — Larger Screen View
+   Author: Ilich Chang Vasquez
+   ======================================= */
+
+/* ---- Tablet: 2 columns (600px+) ---- */
+@media (min-width: 600px) {
+
+    /* Hide hamburger on larger screens */
+    #menu {
+        display: none;
+    }
+
+    /* Nav becomes horizontal flex bar */
+    nav.navigation {
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+        background-color: transparent;
+        border-top: none;
+        padding: 0;
+        gap: 0.15rem;
+        align-items: center;
+    }
+
+    nav.navigation a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.9rem;
+        border-bottom: none;
+        border-radius: 4px;
+    }
+
+    nav.navigation a:hover {
+        padding-left: 0.9rem;
+        /* reset mobile indent */
+        background-color: rgba(255, 255, 255, 0.18);
+        color: var(--color-accent);
+    }
+
+    /* 2-column grid */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    /* Shorter images on 2-col layout */
+    figure img {
+        aspect-ratio: 16 / 10;
+    }
+}
+
+/* ---- Desktop: 3 columns (900px+) ---- */
+@media (min-width: 900px) {
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    nav.navigation a {
+        font-size: 0.95rem;
+        padding: 0.45rem 1rem;
+    }
+
+    /* 3-column grid */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    figure img {
+        aspect-ratio: 16 / 10;
+    }
+
+    main {
+        padding: 2rem 1.5rem;
+    }
+
+    main h1 {
+        font-size: 1.9rem;
+    }
+}
