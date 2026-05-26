@@ -1,3 +1,7 @@
+:root {
+    --primary-color: steelblue;
+    --secondary-color: white;
+}
 * {
     margin: 0;
     padding: 0;
@@ -5,14 +9,17 @@
 }
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
+    line-height: 1.6;
 }
 header {
-    background-color: steelblue;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 1rem;
+}
+h1::after {
+    content: " 📷";
 }
 main {
     max-width: 1000px;
@@ -25,8 +32,28 @@ picture img {
     border-radius: 10px;
 }
 section {
+    background-color: white;
     margin-top: 1rem;
-    background: white;
     padding: 1rem;
     border-radius: 10px;
+}
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+footer img {
+    margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+
+    body {
+        background-color: #eaeaea;
+    }
+
+    main {
+        padding: 2rem;
+    }
 }

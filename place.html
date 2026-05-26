@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Images</title>
+    <meta name="description" content="Responsive images project featuring the Santiago Chile Temple using WebP images and responsive web design techniques.">
+    <meta name="author" content="Ilich Chang Vasquez">
+    <title>Responsive Images | Santiago Chile Temple</title>
     <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js"></script>
 </head>
 <body>
     <header>
-        <h1>Responsive Images Example</h1>
+        <h1>Santiago Chile Temple</h1>
     </header>
     <main>
         <picture>            
             <source media="(min-width: 1000px)" srcset="images/santiago_chile_webp.webp" type="image/webp">
-
             <source media="(min-width: 600px)" srcset="images/santiago_chile_webp.webp" type="image/webp">
-
             <source media="(max-width: 599px)" srcset="images/santiago_chile_webp.webp" type="image/webp">
-
             <img src="images/santiago_chile_webp.webp" alt="Beautiful landscape" loading="lazy">
         </picture>
 
         <section>
-            <h2>About This Project</h2>
-            <p>                This page demonstrates responsive images using
-                the picture element and WEBP format.
+            <h2>Responsive Web Design</h2>        
+            <p>
+                This project demonstrates responsive images using the
+                picture element, WebP format, and media queries.
+                The featured image is the Santiago Chile Temple.
             </p>
         </section>
     </main>
+    <footer>
+        <img src="images/location.svg" alt="Location icon" width="25">
+    
+        <p>
+            &copy;<span id="currentyear"></span>
+            ⚽ Ilich Chang ⚽ Viña del Mar, Chile
+        </p>    
+        <p id="lastModified"></p>
+    </footer>    
+
 </body>
 </html>
