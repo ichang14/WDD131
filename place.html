@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive images project featuring the Santiago Chile Temple using WebP images and responsive web design techniques.">
+    <meta name="description" content="Country page project featuring the Santiago Chile Temple using responsive WebP images, weather data, and modern web design principles.">
     <meta name="author" content="Ilich Chang Vasquez">
-    <title>Responsive Images | Santiago Chile Temple</title>
+    <title>Santiago Chile Temple</title>
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
@@ -14,31 +14,36 @@
         <h1>Santiago Chile Temple</h1>
     </header>
     <main>
-        <picture>            
+        <picture>
             <source media="(min-width: 1000px)" srcset="images/santiago_chile_webp.webp" type="image/webp">
             <source media="(min-width: 600px)" srcset="images/santiago_chile_webp.webp" type="image/webp">
             <source media="(max-width: 599px)" srcset="images/santiago_chile_webp.webp" type="image/webp">
-            <img src="images/santiago_chile_webp.webp" alt="Beautiful landscape" loading="lazy">
+            <img src="images/santiago_chile_webp.webp" alt="Santiago Chile Temple" loading="lazy">
         </picture>
-
-        <section>
-            <h2>Responsive Web Design</h2>        
-            <p>
-                This project demonstrates responsive images using the
-                picture element, WebP format, and media queries.
-                The featured image is the Santiago Chile Temple.
-            </p>
-        </section>
+        <div class="content-grid">
+            <section class="card">
+                <h2>About</h2>
+                <p>
+                    The Santiago Chile Temple is one of the most iconic
+                    temples in South America and represents peace,
+                    faith, and beauty in Santiago, Chile.
+                </p>
+            </section>
+            <section class="card weather">
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+                <p>Temperature: <span id="temp">45</span>°F</p>
+                <p>Wind Speed: <span id="speed">10</span> mph</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+            </section>
+        </div>
     </main>
-    <footer>
-        <img src="images/ball-football-svgrepo-com.svg" alt="Location icon" width="25">
-    
+    <footer>        
         <p>
             &copy;<span id="currentyear"></span>
             ⚽ Ilich Chang ⚽ Viña del Mar, Chile
-        </p>    
+        </p>
         <p id="lastModified"></p>
-    </footer>    
-
+    </footer>
 </body>
 </html>

@@ -1,42 +1,70 @@
 :root {
-    --primary-color: steelblue;
-    --secondary-color: white;
+    --primary-color: #003049;
+    --secondary-color: #ffffff;
+    --accent-color: #d62828;
+    --background-color: #f5f5f5;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: var(--background-color);
+    color: #111;
     line-height: 1.6;
 }
+
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
 }
-h1::after {
-    content: " 📷";
-}
+
 main {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 1rem;
 }
+
 picture img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-section {
-    background-color: white;
+
+.content-grid {
+    display: grid;
+    gap: 1rem;
     margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
 }
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather-icon {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
 footer {
     margin-top: 2rem;
     text-align: center;
@@ -44,16 +72,29 @@ footer {
     background-color: var(--primary-color);
     color: white;
 }
+
 footer img {
     margin-bottom: 0.5rem;
 }
+
+/* DESKTOP VIEW */
 @media screen and (min-width: 768px) {
 
     body {
-        background-color: #eaeaea;
+        background-color: #e9ecef;
     }
 
-    main {
-        padding: 2rem;
+    .content-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Pseudo-element emoticon ONLY desktop */
+    .weather h2::after {
+        content: " ⛅";
+    }
+
+    /* Hide SVG in desktop */
+    .weather-icon {
+        display: none;
     }
 }
