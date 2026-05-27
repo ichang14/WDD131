@@ -1,12 +1,6 @@
 const year = document.querySelector("#currentyear");
-
 year.textContent = new Date().getFullYear();
-
-document.querySelector("#lastModified").textContent =
-`Last Modification: ${document.lastModified}`;
-
-
-// WIND CHILL
+document.querySelector("#lastModified").textContent =`Last Modification: ${document.lastModified}`;
 
 const temp = 45;
 const speed = 10;
