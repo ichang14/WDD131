@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A visual album of Latter-day Saint temples from South America and around the world, featuring images from Chile, Argentina, Peru, and Utah.">
+    <meta name="author" content="Ilich Chang Vasquez" />
+    <title>Temple Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 600px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Temple Album</h2>
+        <button id="menu" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        <nav class="navigation">
+            <a href="#" data-filter="home">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1 id="filter-title">Home</h1>
+        <div class="gallery" id="gallery"></div>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span>
+            ⚽ Ilich Chang ⚽ Viña del Mar, Chile
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
