@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer>  let count = Number(localStorage.getItem("reviews")) || 0;
+        count++;
+        localStorage.setItem("reviews", count);
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector("#reviewCount").textContent = count;
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Thank You!</h1>
+    </header>
+    <main>
+        <h2>Your review has been submitted.</h2>
+        <p>
+            Reviews completed:
+            <strong id="reviewCount"></strong>
+        </p>
+    </main>
+    <footer>
+        <p>⚽ Ilich Chang ⚽</p>
+    </footer>
+</body>
+</html>
