@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Oruguitas Deco</title>
+    <meta name="description" content="Contáctanos para cotizar regalos personalizados, poleras, polerones, agendas, tazones y artículos corporativos.">
+    <meta name="author" content="Ilich Chang">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo_oruguitas.png" alt="Logo Oruguitas Deco" class="logo">
+            <h1>Oruguitas Deco</h1>
+        </div>
+        <button id="menu-button" aria-label="Abrir menú">
+            ☰
+        </button>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="product.html">Productos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-title">
+            <h2>Contáctanos</h2>
+            <p>
+                Cuéntanos qué producto deseas personalizar y te responderemos a la brevedad.
+            </p>
+        </section>
+        <section class="contact-section">
+            <form id="contact-form">
+                <label for="name">
+                    Nombre:
+                </label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">
+                    Correo electrónico:
+                </label>
+                <input type="email" id="email" name="email" required>
+                <label for="product">
+                    Producto de interés:
+                </label>
+                <select id="product" name="product" required>
+                    <option value="">
+                        Seleccione una opción
+                    </option>
+                    <option value="Poleras">
+                        Poleras Personalizadas
+                    </option>
+                    <option value="Polerones">
+                        Polerones Personalizados
+                    </option>
+                    <option value="Agendas">
+                        Agendas
+                    </option>
+                    <option value="Tazones">
+                        Tazones
+                    </option>
+                    <option value="Lapices">
+                        Lápices Corporativos
+                    </option>
+                    <option value="Cuadros">
+                        Cuadros Decorativos
+                    </option>
+                </select>
+                <label for="message">
+                    Mensaje:
+                </label>
+                <textarea id="message" name="message" rows="5" required>
+            </textarea>
+                <button type="submit">
+                    Enviar Consulta
+                </button>
+            </form>
+        </section>
+        <section class="instagram">
+            <h2>Instagram</h2>
+            <p>
+                También puedes encontrarnos en Instagram para ver nuestros trabajos más recientes.
+            </p>
+            <a href="https://www.instagram.com/oruguitas_deco/" target="_blank" class="btn">
+                @oruguitas_deco
+            </a>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Oruguitas Deco</p>
+        <p>
+            <a href="referencias.html">
+                Referencias
+            </a>
+        </p>
+        <p>
+            ⚽ Ilich Chang ⚽
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Oruguitas Deco</title>
+    <meta name="description" content="Explora nuestra colección de regalos personalizados: poleras, polerones, agendas, tazones, cuadros y artículos corporativos.">
+    <meta name="author" content="Ilich Chang">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo_oruguitas.png" alt="Logo Oruguitas Deco" class="logo">
+            <h1>Oruguitas Deco</h1>
+        </div>
+        <button id="menu-button" aria-label="Abrir menú">
+            ☰
+        </button>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="product.html">Productos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-title">
+            <h2>Nuestros Productos</h2>
+            <p>
+                Descubre algunos de nuestros trabajos personalizados.
+            </p>
+        </section>
+        <section class="filters">
+            <label for="category">
+                Filtrar por categoría:
+            </label>
+            <select id="category">
+                <option value="all">
+                    Todos
+                </option>
+                <option value="poleras">
+                    Poleras
+                </option>
+                <option value="polerones">
+                    Polerones
+                </option>
+                <option value="agendas">
+                    Agendas
+                </option>
+                <option value="tazones">
+                    Tazones
+                </option>
+                <option value="lapices">
+                    Lápices
+                </option>
+                <option value="cuadros">
+                    Cuadros
+                </option>
+            </select>
+        </section>
+        <section>
+            <div id="products-container" class="products-grid">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Oruguitas Deco</p>
+        <p>
+            <a href="referencias.html">
+                Referencias
+            </a>
+        </p>
+        <p>
+            ⚽ Ilich Chang ⚽
+        </p>
+    </footer>
+</body>
+</html>
