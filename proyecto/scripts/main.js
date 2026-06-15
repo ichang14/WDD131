@@ -10,42 +10,62 @@ if (menuButton) {
 }
 
 const products = [
-{
-    id: 1,
-    name: "Custom T-Shirt",
-    category: "shirts",
-    image: "images/polera1.png"
-},
-{
-    id: 2,
-    name: "Event T-Shirt",
-    category: "shirts",
-    image: "images/polera4.png"
-},
-{
-    id: 3,
-    name: "Custom Hoodie",
-    category: "hoodies",
-    image: "images/poleron1.png"
-},
-{
-    id: 4,
-    name: "Custom Planner",
-    category: "planners",
-    image: "images/agenda.jpeg"
-},
-{
-    id: 5,
-    name: "Custom Mug",
-    category: "mugs",
-    image: "images/taza.jpeg"
-},
-{
-    id: 6,
-    name: "Corporate Pen",
-    category: "pens",
-    image: "images/lapiz1.png"
-}
+
+    {
+        id: 1,
+        name: "Polera Personalizada",
+        category: "poleras",
+        image: "images/polera1.png"
+    },
+
+    {
+        id: 2,
+        name: "Polera Evento",
+        category: "poleras",
+        image: "images/polera4.png"
+    },
+
+    {
+        id: 3,
+        name: "Polerón Personalizado",
+        category: "polerones",
+        image: "images/poleron1.png"
+    },
+
+    {
+        id: 4,
+        name: "Agenda Personalizada",
+        category: "agendas",
+        image: "images/agenda.jpeg"
+    },
+
+    {
+        id: 5,
+        name: "Tazón Personalizado",
+        category: "tazones",
+        image: "images/taza.jpeg"
+    },
+
+    {
+        id: 6,
+        name: "Lápiz Corporativo",
+        category: "lapices",
+        image: "images/lapiz1.png"
+    },
+
+    {
+    id: 7,
+    name: "Cuadro Decorativo",
+    category: "cuadros",
+    image: "images/cuadro.jpeg"
+    },
+    {
+    id: 8,
+    name: "Gorro Personalizado",
+    category: "gorros",
+    image: "images/gorro1.png"
+    }
+
 ];
 
 const productCount = document.querySelector("#product-count");
@@ -89,7 +109,7 @@ function displayProducts(productList) {
             <button
                 class="favorite-btn"
                 data-id="${product.id}">
-                ❤️ Add to Favorites
+                ❤️ Favorito
             </button>
 
         </article>
@@ -192,7 +212,7 @@ if (contactForm) {
             event.preventDefault();
 
             alert(
-                "Thank you for contacting us. We will get back to you soon."
+                "Gracias por contactarnos. Te responderemos pronto."
             );
 
             contactForm.reset();
